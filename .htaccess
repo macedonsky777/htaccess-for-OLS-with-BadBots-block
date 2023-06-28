@@ -32,7 +32,7 @@ CacheKeyModify -qs:_ga
 ## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
 ## LITESPEED WP CACHE PLUGIN - Do not edit the contents of this block! ##
 # END NON_LSCACHE
-
+RewriteRule ^(xmlrpc\.php|wp-trackback\.php) - [F,L]
 RewriteCond %{HTTP_USER_AGENT} ".*SemrushBot.*" [OR]
 RewriteCond %{HTTP_USER_AGENT} ".*AhrefsBot.*" [OR]
 RewriteCond %{HTTP_USER_AGENT} ".*MJ12bot.*" [OR]
