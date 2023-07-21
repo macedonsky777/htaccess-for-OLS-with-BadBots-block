@@ -610,7 +610,7 @@ RewriteCond %{HTTP_USER_AGENT} ".*ZmEu.*" [OR]
 RewriteCond %{HTTP_USER_AGENT} ".*ZumBot.*" [OR]
 RewriteCond %{HTTP_USER_AGENT} ".*YepBot.*" [OR]
 RewriteCond %{HTTP_USER_AGENT} ".*ZyBorg.*"
-RewriteRule ".*" "-" [F]
+RewriteRule ".*" - [R=200,L]
 
 # BEGIN WordPress
 # The directives (lines) between "BEGIN WordPress" and "END WordPress" are
